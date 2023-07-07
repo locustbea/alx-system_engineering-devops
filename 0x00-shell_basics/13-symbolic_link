@@ -1,2 +1,0 @@
-#!/bin/bash
-ln  -s /bin/ls  _ls_ (pls make sure the underscore are touching both the l and s)
