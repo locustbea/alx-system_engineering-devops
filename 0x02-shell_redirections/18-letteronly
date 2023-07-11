@@ -1,6 +1,2 @@
 #!/bin/bash
-<<<<<<< HEAD
-qrep "h^[a-z A-Z]" /etc/ssh/sshd_config
-=======
-qrep "^[a-z A-Z]" /etc/ssh/sshd_config
->>>>>>> 2ec2680219219e42808d467041f603441b519c48
+qrep "^ [a-z A-Z]" /etc/ssh/sshd_config
