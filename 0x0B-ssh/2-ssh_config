@@ -1,5 +1,9 @@
-Host 377545-web-01
-    HostName 54.165.46.41
-    User ubuntu
-    IdentityFile ~/.ssh/school
-    PasswordAuthentication no
+#!/usr/bin/env bash
+# ssh config file
+Host *
+      PasswordAuthentication no
+      IdentifyFile ~/.ssh/school
+      SendENV LANG LC_*
+      HashKnownHosts yes
+      GSSAPIAuthentification yes
+      GSSAPIDelegateCredentials no
