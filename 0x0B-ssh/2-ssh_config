@@ -2,7 +2,7 @@
 # ssh config file
 Host *
       PasswordAuthentication no
-      IdentifyFile ~/.ssh/school
+      IdentifyFile ~/.ssh/schhol
       SendENV LANG LC_*
       HashKnownHosts yes
       GSSAPIAuthentification yes
