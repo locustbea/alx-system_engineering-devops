@@ -40,13 +40,15 @@ frontend locustbea-frontend
         http-request set-header X_Forwarded-Proto http
         default_backend locustbea-backend
 
-frontend locustbea.tech-frontend-https
+frontend locustbea-frontend-https
         bind *:443 ssl crt /etc/haproxy/certs/www.locustbea.tech.pem
         http-request set-header X-Forwarded-Proto https
         default_backend locustbea-backend
 
 backend locustbea-backend
         balance roundrobin
+ server 483321-web-01 18.206.197.234:80 check
+        server 483321-web-02 18.234.129.56:80 check
    
 #        server 483321-web-01 18.206.197.234:80 check
 #        server 483321-web-02 18.234.129.56:80 check
