@@ -47,8 +47,8 @@ frontend locustbea-frontend-https
 
 backend locustbea-backend
         balance roundrobin
- server 483321-web-01 18.206.197.234:80 check
-        server 483321-web-02 18.234.129.56:80 check
+ server 483321-web-01 100.26.164.187:80 check
+        server 483321-web-02 100.26.223.24:80 check
    
-#        server 483321-web-01 18.206.197.234:80 check
-#        server 483321-web-02 18.234.129.56:80 check
+#        server 483321-web-01 100.26.164.187:80 check
+#        server 483321-web-02 100.26.223.24:80 check
